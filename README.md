@@ -1,1 +1,31 @@
 # olist-analytics-dashboard
+# Olist: retention по когортам + KPI по месяцам (PostgreSQL + Tableau)
+
+## Что это
+Небольшой учебно-практический проект на датасете Olist (бразильский e-commerce).
+Цель — собрать понятные витрины в PostgreSQL и собрать дашборд в Tableau Public: как меняются заказы, сколько клиентов возвращается и что происходит с повторными покупками.
+
+## Что сделано
+- Когортный retention (M0–M6) в виде heatmap
+- График заказов по месяцам
+- Repeat rate по месяцам (доля покупателей, которые покупали ранее)
+
+## Дашборд
+- Tableau Public: https://public.tableau.com/app/profile/zloi.kommentator/viz/Olist_17708230550810/OlistDashboard?publish=yes
+
+## Данные
+- Brazilian E-Commerce Public Dataset by Olist (Kaggle)
+
+## Инструменты
+- PostgreSQL: staging-таблицы + витрины через VIEW
+- Tableau Public: визуализация (через CSV, потому что Public не коннектится к Postgres напрямую)
+
+## Как читать метрики (чтобы не путаться)
+- **Retention (когорты)** — берём пользователей, которые впервые купили в конкретный месяц, и смотрим, какой % из них покупает снова через 1, 2, 3… месяцев.
+- **Repeat rate** — берём всех покупателей месяца и считаем, какая доля из них уже покупала раньше.
+
+## Как воспроизвести
+1. Загрузить CSV Olist 
+2. Выполнить SQL 
+3. Выгрузить результаты в CSV 
+4. Подключить CSV в Tableau Public и собрать дашборд
