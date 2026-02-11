@@ -28,3 +28,7 @@
 2. Выполнить SQL 
 3. Выгрузить результаты в CSV 
 4. Подключить CSV в Tableau Public и собрать дашборд
+
+## Скриншоты
+![Dashboard](assets/dasboard.jpg)
+![KPI](assets/orders_KPI.jpg)
