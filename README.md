@@ -30,5 +30,5 @@
 4. Подключить CSV в Tableau Public и собрать дашборд
 
 ## Скриншоты
-![Dashboard](assets/dasboard.jpg)
-![KPI](assets/orders_KPI.jpg)
+![Dashboard](Assets/dasboard.jpg)
+![KPI](Assets/orders_KPI.jpg)
