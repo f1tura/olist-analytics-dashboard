@@ -1,4 +1,3 @@
-# olist-analytics-dashboard
 # Olist: retention по когортам + KPI по месяцам (PostgreSQL + Tableau)
 
 ## Что это
